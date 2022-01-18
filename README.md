@@ -11,7 +11,6 @@ This browser based web application to ...
 =======
 * Ebony is having issues *
 * Hi my name is Stanley. I'm excited about this project because it is my first time developing an application.
->>>>>>> 4aa7f2bf53dee7eac05051151781a5bce323dfb0
 * Hi my name is Caroline.
 *I'm still a bit confused on this lab project but I'm slowly getting the hang of it.
 	
