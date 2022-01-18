@@ -6,6 +6,8 @@
 
 ## General Info
 This browser based web application to ...
+* Hi my name is Caroline.
+*I'm still a bit confused on this lab project but I'm slowly getting the hang of it.
 	
 ## Technologies
 Technologies used for this project:
