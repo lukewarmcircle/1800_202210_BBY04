@@ -6,7 +6,7 @@
 
 ## General Info
 This browser based web application to ...
-<<<<<<< HEAD
+
 * Hi my name is Stanley. I'm excited about this project because it is my first time developing an application. It's going to be fun.
 * Ebony is having issues *
 * Hi my name is Caroline.
