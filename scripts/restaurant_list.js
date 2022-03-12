@@ -124,3 +124,7 @@
 // }
 
 // writeRestaurants();
+
+function setRestaurantData(name) {
+    localStorage.setItem("restaurantName", name);
+}

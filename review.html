@@ -33,7 +33,7 @@
     <div class="container">
         <div id="review-grid">
             <br>
-            <b id="review-welcome">Write a Review</b>
+            <b id="review-welcome">Write a Review <span id="RestaurantName"></span></b>
             <br>
             <br>
             <label>Name of Restaurant</label>
@@ -48,13 +48,13 @@
 
             <!--Radio Buttons-->
             <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                <input type="radio" class="btn-check" name="recommend" value="Would Recommend" id="btnradio1" autocomplete="off" checked>
                 <label class="btn btn-outline-primary" for="btnradio1">Would Recommend</label>
 
-                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                <input type="radio" class="btn-check" name="recommend" value="Wouldn't Recommend" id="btnradio2" autocomplete="off">
                 <label class="btn btn-outline-primary" for="btnradio2">Wouldn't Recommend</label>
 
-                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                <input type="radio" class="btn-check" name="recommend" value="Not Sure" id="btnradio3" autocomplete="off">
                 <label class="btn btn-outline-primary" for="btnradio3">Not Sure</label>
             </div>
 
@@ -62,26 +62,30 @@
             <br>
 
 
-            <div id="parking">
+            <div id="Parking">
                 <label style="width: 100px;">Free Parking</label>
-                <input type="radio" value="val1" name="parking">
+                <input type="radio" value="yes" name="freeParking">
                 <label style="width: 50px;">Yes</label>
-                <input type="radio" value="val2" name="parking">
+                <input type="radio" value="no" name="freeParking">
                 <label style="width: 50px;">No</label>
             </div>
 
             <br>
 
-            <!--Dropdown Menu-->
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu" data-bs-toggle="dropdown" aria-expanded="false">
-          Price Range
-        </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                    <li><button class="dropdown-item" type="button">$ - $$</button></li>
-                    <li><button class="dropdown-item" type="button">$$ - $$$</button></li>
-                    <li><button class="dropdown-item" type="button">$$$ - $$$$</button></li>
-                </ul>
+
+            <div id="Cost">
+                <label style="width: 100px;">Cost (5 is highest)</label>
+
+                <input type="radio" value="1" name="cost">
+                <label style="width: 50px;">1</label>
+                <input type="radio" value="2" name="cost">
+                <label style="width: 50px;">2</label>
+                <input type="radio" value="3" name="cost">
+                <label style="width: 50px;">3</label>
+                <input type="radio" value="4" name="cost">
+                <label style="width: 50px;">4</label>
+                <input type="radio" value="5" name="cost">
+                <label style="width: 50px;">5</label>
             </div>
 
             <br>
@@ -98,10 +102,9 @@
             <br>
 
 
-
             <!--Block Button-->
             <div class="d-grid gap-2">
-                <button id="submit" class="btn btn-primary" onclick="publishReview()" type="button">Publish</button>
+                <button id="submit" class="btn btn-primary" onclick="writeReview()" type="button">Publish</button>
             </div>
         </div>
     </div>
