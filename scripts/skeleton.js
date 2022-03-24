@@ -7,3 +7,8 @@ function loadSkeleton() {
     console.log($('#footerPlaceholder').load('./text/footer.html'));
 }
 loadSkeleton(); //invoke the function
+
+/* tooltip (Chinese hoverover bar in nav.html) */
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+  });
