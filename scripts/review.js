@@ -30,8 +30,9 @@ function writeReview() {
     let Recommend = document.querySelector('input[name="recommend"]:checked').value;
     let FreeParking = document.querySelector('input[name="freeParking"]:checked').value;
     let Cost = document.querySelector('input[name="cost"]:checked').value;
+    let Rating = document.querySelector('input[name="stars"]:checked').value;
 
-    console.log(Comment, Recommend, Parking, Cost);
+    console.log(Comment, Recommend, Parking, Cost, Rating);
 
 
     db.collection("Reviews").add({
@@ -41,7 +42,13 @@ function writeReview() {
         recommend: Recommend,
         freeParking: FreeParking,
         cost: Cost,
+        rating: Rating,
 
 
     })
 }
+
+
+$(':radio').change(function() {
+    console.log('New star rating: ' + this.value);
+});

@@ -92,19 +92,45 @@
 
             <!--Icon-->
             <p>Rate your overall experience</p>
-            <i class="material-icons">star</i>
-            <i class="material-icons">star</i>
-            <i class="material-icons">star</i>
-            <i class="material-icons">star</i>
-            <i class="material-icons">star_outline</i>
-
+            <form class="rating">
+                <label>
+                  <input type="radio" name="stars" value="1" />
+                  <span class="icon">★</span>
+                </label>
+                <label>
+                  <input type="radio" name="stars" value="2" />
+                  <span class="icon">★</span>
+                  <span class="icon">★</span>
+                </label>
+                <label>
+                  <input type="radio" name="stars" value="3" />
+                  <span class="icon">★</span>
+                  <span class="icon">★</span>
+                  <span class="icon">★</span>   
+                </label>
+                <label>
+                  <input type="radio" name="stars" value="4" />
+                  <span class="icon">★</span>
+                  <span class="icon">★</span>
+                  <span class="icon">★</span>
+                  <span class="icon">★</span>
+                </label>
+                <label>
+                  <input type="radio" name="stars" value="5" />
+                  <span class="icon">★</span>
+                  <span class="icon">★</span>
+                  <span class="icon">★</span>
+                  <span class="icon">★</span>
+                  <span class="icon">★</span>
+                </label>
+            </form>
             <br>
             <br>
 
 
             <!--Block Button-->
             <div class="d-grid gap-2">
-                <button id="submit" class="btn btn-primary" onclick="writeReview()" type="button">Publish</button>
+                <a href="/reviewThanks.html"><button id="submit" class="btn btn-primary" onclick="writeReview()" type="button">Publish</button></a>
             </div>
         </div>
     </div>
