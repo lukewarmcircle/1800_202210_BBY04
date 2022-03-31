@@ -21,6 +21,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script>
     <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css" />
+    <link type="text/css" rel="stylesheet" href="./styles/listviewStyle.css">
 
 </head>
 
@@ -28,23 +29,43 @@
 
     <nav id="navbarPlaceholder"></nav>
 
-    <div class="container">
 
-        <p><span id="Rest1"></span></p>
-        <p><span id="Rest2"></span></p>
-        <p><span id="Rest3"></span></p>
-        <p><span id="Rest4"></span></p>
-        <p><span id="Rest5"></span></p>
+
+    <template id="restaurantCardTemplate">
+        <div class="card">
+            <img class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title"><span id="card-title"></span></h5>
+                <p class="card-length"></p>
+               
+               
+                <a class="btn btn-primary read-more" style="float: right">More info</a>
+              
+            </div>
+        </div>
+    </template>
+
+    <div id="list-container">
+
+        <div class="container">
+            <h1>Sort by Distance</h1>
+
+            <div class="container">
+                <div id="restaurantCardGroup" class="row row-cols-auto">
+                </div>
+            </div>
+        </div>
     </div>
+    <br>
+    <br>
+    <br>
 
 
     <footer id="footerPlaceholder"></footer>
 
     <script src="./scripts/skeleton.js"></script>
     <script src="./scripts/firebaseAPI_BBY04.js"></script>
-    <script src="./scripts/authetication.js"></script>
-    <script src="./scripts/profile_info.js"></script>
-    <script src="./scripts/list view.js"></script>
+    <script src="./scripts/sortByDistance.js"></script>
 
 
 </body>
