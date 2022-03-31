@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title id="pageName">No. 1 Beef Noodle</title>
+    <meta name="BBY04 Landing Page" content="Comp 1800 Project">
+    <meta name="BBY04" content="BCIT">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="/images/favicon.ico" rel="icon" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/restaurantStyle.css">
+
+</head>
+
+<body>
+
+    <nav id="navbarPlaceholder"></nav>
+
+    <div class="container">
+
+        <h1><span id="restaurantName"></span></h1>
+        <h3><span id="distance"></span> km</h3>
+
+        <div id="gallery">
+            <img class="restaurant-image1" src="/images/no1_beef_noodle.jpg">
+            <img class="restaurant-image2" src="/images/no1_beef_noodle2.jpg">
+            <img class="restaurant-image3" src="/images/no1_beef_noodle3.jpg">
+        </div>
+
+
+        <div id="mobile-gallery">
+
+
+            <div class="mySlides">
+                <div class="numbertext">1 / 3</div>
+                <img src="/images/no1_beef_noodle.jpg" class="mobile-image">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 3</div>
+                <img src="/images/no1_beef_noodle2.jpg" class="mobile-image">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext ">3 / 3</div>
+                <img src="/images/no1_beef_noodle3.jpg" class="mobile-image">
+            </div>
+
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+
+
+
+
+
+
+        <div id="location">
+            <p><span id="street-num"></span> <span id="city"></span>, <span id="postal-code"></span></p>
+        </div>
+        <i class="material-icons">star</i>
+        <i class="material-icons">star</i>
+        <i class="material-icons">star</i>
+        <i class="material-icons">star</i>
+        <p>Price: $$</p>
+        <p>Vacancy: <span id="vacancy"></span></p>
+        <div id="description">
+
+
+        </div>
+    </div>
+    <div id="translation-container">
+        <div id="translation"></div>
+        <div id="translate-box"></div>
+    </div>
+    <div class="d-grid gap-2">
+        <a href="/review.html"><button id="writeReview" class="btn btn-primary" onclick="toReview()" type="button">Write a Review</button></a>
+    </div>
+    <br>
+    <br>
+    <br>
+
+
+    <footer id="footerPlaceholder"></footer>
+
+    <script src="./scripts/skeleton.js"></script>
+    <script src="./scripts/firebaseAPI_BBY04.js"></script>
+    <script src="./scripts/eachRestaurant.js"></script>
+
+</body>
+
+</html>
