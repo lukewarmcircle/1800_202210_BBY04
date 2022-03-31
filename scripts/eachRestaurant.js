@@ -61,6 +61,8 @@ function read_description() {
                 console.log(description.data().name);
             })
     }
+
+
 }
 
 read_description();
@@ -96,6 +98,63 @@ function showSlides(n) {
 
 
 }
+
+//translation button
+document.addEventListener('DOMContentLoaded', function() {
+    var button = document.createElement('input');
+    button.type = 'button';
+    button.id = 'translate';
+    button.value = 'translate';
+    button.className = 'btn';
+
+    button.onclick = function() {
+        // console.log("inside the button");
+        if (document.getElementById("pageName").innerHTML == "No. 1 Beef Noodle") {
+            db.collection("Restaurants_translation").doc("TqMxdmHJopj8APB6nB12")
+                .onSnapshot(function(description) {
+                    document.getElementById("translate-box").innerHTML = description.data().translation;
+                    console.log(description.data().name);
+                })
+        }
+
+        if (document.getElementById("pageName").innerHTML == "Atlas Steak + Fish") {
+            db.collection("Restaurants_translation").doc("YGuFQuJLgN6V1a2RzrLN")
+                .onSnapshot(function(description) {
+                    document.getElementById("translate-box").innerHTML = description.data().translation;
+                    console.log(description.data().name);
+                })
+        }
+
+        if (document.getElementById("pageName").innerHTML == "Sushi S Japanese Restaurant") {
+            db.collection("Restaurants_translation").doc("vdt0NAHJjB9EboUjGghL")
+                .onSnapshot(function(description) {
+                    document.getElementById("translate-box").innerHTML = description.data().translation;
+                    console.log(description.data().name);
+                })
+        }
+
+        if (document.getElementById("pageName").innerHTML == "Grand Dynasty Seafood Restaurant") {
+            db.collection("Restaurants_translation").doc("f0xxPM29l2aLFskwyCnR")
+                .onSnapshot(function(description) {
+                    document.getElementById("translate-box").innerHTML = description.data().translation;
+                    console.log(description.data().name);
+                })
+        }
+
+        if (document.getElementById("pageName").innerHTML == "Personas Patio Restaurant And Lounge") {
+            db.collection("Restaurants_translation").doc("6Nu5B0xHkPqQiTIvTm2p")
+                .onSnapshot(function(description) {
+                    document.getElementById("translate-box").innerHTML = description.data().translation;
+                    console.log(description.data().name);
+                })
+        }
+    };
+
+    var container = document.getElementById('translation');
+    container.appendChild(button);
+}, false);
+
+
 
 function toReview() {
 
