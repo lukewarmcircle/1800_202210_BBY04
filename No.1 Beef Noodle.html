@@ -31,6 +31,7 @@
     <div class="container">
 
         <h1><span id="restaurantName"></span></h1>
+        <h3><span id="distance"></span> km</h3>
 
         <div id="gallery">
             <img class="restaurant-image1" src="/images/no1_beef_noodle.jpg">
@@ -71,18 +72,60 @@
         <div id="location">
             <p><span id="street-num"></span> <span id="city"></span>, <span id="postal-code"></span></p>
         </div>
+        <i class="material-icons">star</i>
+        <i class="material-icons">star</i>
+        <i class="material-icons">star</i>
+        <i class="material-icons">star</i>
+        <p>Price: $$</p>
+        <p>Vacancy: <span id="vacancy"></span></p>
         <div id="description">
 
-            <div id=" "></div>
 
-
-            <div id="reviews">
-
-            </div>
         </div>
     </div>
 
-    <div class="d-grid gap-2">
+
+
+
+    <div id="review-container">
+
+        <h3>Recent reviews:</h3>
+
+        <p>Name of reviewer: <span id="username"></span> </p>
+
+
+        <div id="ratings-container">
+            <i class="material-icons" id="1">star</i>
+            <i class="material-icons" id="2">star</i>
+            <i class="material-icons" id="3">star</i>
+            <i class="material-icons" id="4">star</i>
+            <i class="material-icons" id="5">star</i>
+        </div>
+
+
+        <div id="cost-container">
+            <p>Price: <span id="cost"></span> </p>
+        </div>
+        <div id="recommend-container">
+            <p>Recommendation: <span id="recommend"></span></p>
+        </div>
+        <div id="parking-container">
+            <p>Free Parking: <span id="parking"></span></p>
+        </div>
+
+        <div id="comment-container">
+            <span id="reviews"></span>
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+    <div class="d-grid gap-2" id="button-container">
         <a href="/review.html"><button id="writeReview" class="btn btn-primary" onclick="toReview()" type="button">Write a Review</button></a>
     </div>
     <br>

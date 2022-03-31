@@ -97,6 +97,14 @@
     width: 16.66%;
 }
 
+#review-container {
+    padding: 5%;
+}
+
+#button-container {
+    padding: 5%;
+}
+
 @media only screen and (max-width: 800px) {
     #gallery {
         display: none;

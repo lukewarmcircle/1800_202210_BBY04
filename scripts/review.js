@@ -31,29 +31,30 @@ function writeReview() {
     let FreeParking = document.querySelector('input[name="freeParking"]:checked').value;
     let Cost = document.querySelector('input[name="cost"]:checked').value;
     let Rating = document.querySelector('input[name="stars"]:checked').value;
+    let Username = document.getElementById("username").value;
 
-    console.log(Comment, Recommend, Parking, Cost, Rating);
+    console.log(Comment, Recommend, Parking, Cost, Rating, Username);
 
 
     db.collection("Reviews").add({
 
-        title: Title,
-        comment: Comment,
-        recommend: Recommend,
-        freeParking: FreeParking,
-        cost: Cost,
-        rating: Rating,
+            title: Title,
+            comment: Comment,
+            recommend: Recommend,
+            freeParking: FreeParking,
+            cost: Cost,
+            rating: Rating,
+            username: Username,
 
 
-    })
-    redirect();
-    //alert("Review Submitted");
+        })
+        .then(function() {
+            window.location.href = "/reviewThanks.html";
+        })
+
 
 }
 
-function redirect() {
-    window.location.href = "/reviewThanks.html";
-}
 
 
 $(':radio').change(function() {
