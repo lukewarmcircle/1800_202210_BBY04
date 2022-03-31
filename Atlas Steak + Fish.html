@@ -5,7 +5,7 @@
     <meta charset="utf-8">
 
     <!-- Change title innerHTML to match name of restaurant-->
-    <title id="title">Atlas Steak + Fish</title>
+    <title id="pageName">Atlas Steak + Fish</title>
     <meta name="BBY04 Landing Page" content="Comp 1800 Project">
     <meta name="BBY04" content="BCIT">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -88,8 +88,17 @@
 
             </div>
         </div>
-        <div id="translation">testing</div>
+        
     </div>
+    <div id="translation-container">
+        <div id="translation"></div>
+        <div id="translate-box"></div>
+    </div>
+    <div class="d-grid gap-2">
+        <a href="/review.html"><button id="writeReview" class="btn btn-primary" onclick="toReview()" type="button">Write a Review</button></a>
+    </div>
+
+    <br>
     <br>
     <br>
 
@@ -99,7 +108,7 @@
     <script src="./scripts/skeleton.js"></script>
     <script src="./scripts/firebaseAPI_BBY04.js"></script>
     <script src="./scripts/eachRestaurant.js"></script>
-    <script src="./scripts/translation.js"></script>
+    
 
 </body>
 

@@ -46,9 +46,26 @@ function writeReview() {
 
 
     })
+    redirect();
+    //alert("Review Submitted");
+
+}
+
+function redirect() {
+    window.location.href = "/reviewThanks.html";
 }
 
 
 $(':radio').change(function() {
     console.log('New star rating: ' + this.value);
 });
+
+
+function populateName() {
+    var name2 = localStorage.getItem("val");
+    document.getElementById("title").value = name2;
+}
+
+populateName();
+
+document.getElementById("title").style.width = "300px";

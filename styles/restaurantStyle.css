@@ -101,19 +101,37 @@
     #gallery {
         display: none;
     }
+
     #mobile-gallery {
         display: block;
     }
+
     .mobile-image {
         height: 400px;
         width: 100%;
     }
 }
 
-/*translation button */
-/* .btn-styled {
-    font-size: 14px;
-    margin: 8px;
-    padding: 0 10px;
-    line-height: 2;
-} */
+/**traslation container */
+#translation-container {
+    position: relative;
+}
+
+/** translation button */
+#translate {
+    background-color: #008CBA;
+    color: aliceblue;
+    position: absolute;
+    bottom: auto;
+    right: 1%;
+    font-size: 18px;
+
+}
+
+/** translation text */
+#translate-box {
+    /* padding-left: 6%; */
+    margin: auto;
+    height: 200;
+    width: 50%;
+}
