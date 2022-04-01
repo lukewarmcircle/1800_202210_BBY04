@@ -8,8 +8,7 @@ db.collection("Restaurants").where("name", "==", restaurantName)
         // get the documents of query
         Names = queryName.docs;
 
-        // We want to have one document per hike, so if the the result of 
-        //the query is more than one, we can check it right now and clean the DB if needed.
+
         if (size = 1) {
             var thisName = Names[0].data();
             name = thisName.name;
@@ -34,6 +33,8 @@ function writeReview() {
     let Username = document.getElementById("username").value;
 
     console.log(Comment, Recommend, Parking, Cost, Rating, Username);
+
+    console.log(Comment, Recommend, Parking, Cost, Rating);
 
 
     db.collection("Reviews").add({
@@ -70,3 +71,8 @@ function populateName() {
 populateName();
 
 document.getElementById("title").style.width = "300px";
+
+
+$(':radio').change(function() {
+    console.log('New star rating: ' + this.value);
+});
