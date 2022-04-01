@@ -138,8 +138,7 @@
 
 /** translation text */
 #translate-box {
-    /* padding-left: 6%; */
     margin: auto;
-    height: 200;
+    height: 10%;
     width: 50%;
 }
