@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<!--This is the main page-->
+<!--This is the cost page-->
 
 <head>
     <meta charset="utf-8">
@@ -21,7 +21,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script>
     <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css" />
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
 
 </head>
 
@@ -29,35 +29,17 @@
 
     <nav id="navbarPlaceholder"></nav>
 
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <br>
-            <br>
-            <h1 class="display-4">Welcome to Tableseeker</h1>
-            <p class="lead">No more line-ups when you're hungry.</p>
+    
+    <a class="btn btn-primary btn-lg btn-login floating-right-bottom-btn btn-primary" href="sort by cost.html" role="button">List view</a>
+    <div id="map"><iframe src="https://www.google.com/maps/d/u/0/embed?mid=14uHAXBEI_-9V81ODsUANz5HxqdCEcsHq&ehbc=2E312F" width="1600" height="600"></iframe></iframe></div>
 
-            <br>
-            <br>
-            <form id="Login">
-            <a class="btn btn-primary btn-lg btn-login" href="login.html" role="button">Login</a>
-            
-            <!-- <a class="btn btn-primary btn-lg btn-logout" href="main.html" role="button">Logout</a> -->
-        </form>
-            
-            
-       
-        </div>
-    </div>
 
 
     <footer id="footerPlaceholder"></footer>
 
     <script src="./scripts/skeleton.js"></script>
-    <script src="./scripts/firebaseAPI_BBY04.js"></script>
-    <script src="./scripts/authentication.js"></script>
-    <!-- <script src="./scripts/restaurant_list.js"></script> -->
-    <!-- <script src="./scripts/restaurant_vacancy.js"></script> -->
-    <!-- <script src="./scripts/restaurant_translation.js"></script> -->
+
+
 
 </body>
 
