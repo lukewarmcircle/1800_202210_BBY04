@@ -1,5 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
 .material-icons.md-24 {
-    font-size: 24px
+    font-size: 24px;
+    color: #728a86;
+}
+
+.material-icons.md-24:hover {
+    font-size: 24px;
+    color: #40bcc6;
 }
 
 #review-welcome {
@@ -12,23 +20,24 @@
     margin: 0;
     padding: 0;
 }
-#wrapper  {
-position: relative;
+
+#wrapper {
+    position: relative;
 }
 
-#over_map { 
-    
-    position: absolute; 
-    top: 10px; 
-    left: 10px; 
-    z-index: 99; 
+#over_map {
+
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 99;
 }
-.floating-right-bottom-btn
-    {
-    position : absolute;
-    right : 30px;
-    top : 600px;
-    }
+
+.floating-right-bottom-btn {
+    position: absolute;
+    right: 30px;
+    top: 600px;
+}
 
 .rating {
     display: inline-block;
@@ -99,3 +108,91 @@ position: relative;
 #thanks {
     padding: 50px;
 }
+
+/** Changing boostrap css */
+.bg-info {
+    background-color: #d8f1f3 !important;
+    
+}
+
+.navbar-light .navbar-brand {
+    color: #101d2a;
+}
+
+.btn-primary {
+    color: #101d2a;
+    background-color: #ffd451;
+    border-color: #ffd451;
+}
+
+.btn-primary:hover {
+    color: #f4f5f7;
+    background-color: #40bcc6;
+    border-color: #40bcc6;
+}
+
+.btn-outline-primary {
+    color: #728a86;
+    border-color: #728a86;
+    border-style:solid;
+    
+}
+
+.btn-outline-primary:hover {
+    color: #F4F4F6;
+    background-color: #40bcc6;
+    border-color: #40bcc6;
+  }
+
+body {
+    background-color: #f8f8f8;
+    background-image: url(../images/main-background2.jpg);
+    font-family: 'Varela Round', sans-serif;
+}
+
+/* translate button */
+#translate {
+    color: #f8f8f8;
+    background-color: #40bcc6;
+
+}
+
+/* ** Changing boostrap css */
+/* .bg-info {
+    background-color: #d5f9f3 !important;
+    
+}
+
+.navbar-light .navbar-brand {
+    color: #101d2a;
+}
+
+.btn-primary {
+    color: #101d2a;
+    background-color: #ffd451;
+    border-color: #ffd451;
+}
+
+.btn-primary:hover {
+    color: #f4f5f7;
+    background-color: #41bac5;
+    border-color: #41bac5;
+}
+
+.btn-outline-primary {
+    color: #b9d6cf;
+    border-color: #b9d6cf;
+    border-style:solid;
+    
+}
+
+.btn-outline-primary:hover {
+    color: #F4F4F6;
+    background-color: #41bac5;
+    border-color: #41bac5;
+  }
+
+body {
+    background-color: #f8f8f8;
+    font-family: 'Varela Round', sans-serif;
+} */ */

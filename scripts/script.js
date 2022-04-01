@@ -1,23 +1,28 @@
-function sayHello() {
+function LoginBtn() {
     firebase.auth().onAuthStateChanged(function(user) {
         if (user) {
             // User is signed in.
-            // Do something for the user here. 
-            console.log(user.uid);
-            db.collection("users").doc(user.uid)
-                .get()
-                .then(function(doc) {
-                    var n = doc.data().name;
-                    console.log(n);
-                    //$("#username").text(n);
-                    document.getElementById("username").innerText = n;
-                })
+            // console.log(user.uid);
+            console.log("signed in");
+            const element = document.getElementById('btn');
+            element.remove();
+            // db.collection("users").doc(user.uid)
+            //     .get()
+            //     .then(function(doc) {
+            //         var n = doc.data().name;
+            //         console.log(n);
+            //         //$("#username").text(n);
+            //         document.getElementById("username").innerText = n;
+            //     })
         } else {
             // No user is signed in.
+            console.log("not signed in");
+            const element = document.getElementById('btn-logout');
+            element.remove();
         }
     });
 }
-//sayHello();
+LoginBtn();
 
 function writeWebcamData() {
     //this is an array of JSON objects copied from open source data
