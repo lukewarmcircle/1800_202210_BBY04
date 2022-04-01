@@ -12,23 +12,23 @@
     margin: 0;
     padding: 0;
 }
-#wrapper  {
-position: relative;
+
+#wrapper {
+    position: relative;
 }
 
-#over_map { 
-    
-    position: absolute; 
-    top: 10px; 
-    left: 10px; 
-    z-index: 99; 
+#over_map {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 99;
 }
-.floating-right-bottom-btn
-    {
-    position : absolute;
-    right : 30px;
-    top : 600px;
-    }
+
+.floating-right-bottom-btn {
+    position: absolute;
+    right: 30px;
+    top: 600px;
+}
 
 .rating {
     display: inline-block;
