@@ -2,13 +2,13 @@ var ui = new firebaseui.auth.AuthUI(firebase.auth());
 
 var uiConfig = {
     callbacks: {
-        signInSuccessWithAuthResult: function(authResult, redirectUrl) {
+        signInSuccessWithAuthResult: function (authResult, redirectUrl) {
             // User successfully signed in.
             // Return type determines whether we continue the redirect automatically
             // or whether we leave that to developer to handle.
             return true;
         },
-        uiShown: function() {
+        uiShown: function () {
             // The widget is rendered.
             // Hide the loader.
             document.getElementById('loader').style.display = 'none';
@@ -16,7 +16,7 @@ var uiConfig = {
     },
     // Will use popup for IDP Providers sign-in flow instead of the default, redirect.
     signInFlow: 'popup',
-    signInSuccessUrl: 'main.html',
+    signInSuccessUrl: 'login-success.html',
     signInOptions: [
         // Leave the lines as is for the providers you want to offer your users.
         //firebase.auth.GoogleAuthProvider.PROVIDER_ID,
@@ -33,3 +33,24 @@ var uiConfig = {
 };
 
 ui.start('#firebaseui-auth-container', uiConfig);
+
+// function Signout() {
+//     firebase.auth().signOut()
+
+//         .then(function () {
+//             console.log('Signout Succesfull')
+//         }, function (error) {
+//             console.log('Signout Failed')
+//         });
+// }
+
+// import { getAuth, signOut } from "firebase/auth";
+
+// const auth = getAuth();
+// signOut(auth).then(() => {
+//     // Sign-out successful.
+// }).catch((error) => {
+//     // An error happened.
+// });
+
+// document.getElementsByClassName("btn-logout").addEventListener("click", signout());
