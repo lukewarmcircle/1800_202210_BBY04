@@ -118,7 +118,7 @@
     color: #101d2a;
 }
 
-.btn-info{
+.btn-info {
     color: #101d2a;
     background-color: #ffd451;
     border-color: #ffd451;
@@ -143,23 +143,30 @@
 }
 
 .btn-outline-primary {
-    color: #728a86;
-    border-color: #728a86;
-    border-style:solid;
-    
+    color: rgb(95, 91, 91);
+    border-color: rgb(95, 91, 91);
+    border-style: solid;
+
 }
 
 .btn-outline-primary:hover {
     color: #F4F4F6;
     background-color: #40bcc6;
     border-color: #40bcc6;
-  }
+}
 
 body {
     background-color: #f8f8f8;
-    background-image: url(../images/main-background2.jpg);
+    background-image: url(../images/background4.png);
     font-family: 'Varela Round', sans-serif;
 }
+
+.restaurant-block {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 5%;
+}
+
+
 
 /* translate button */
 #translate {
@@ -168,42 +175,8 @@ body {
 
 }
 
-/* ** Changing boostrap css */
-/* .bg-info {
-    background-color: #d5f9f3 !important;
-    
+/** review button */
+#button-container {
+    margin-right: 5%;
+
 }
-
-.navbar-light .navbar-brand {
-    color: #101d2a;
-}
-
-.btn-primary {
-    color: #101d2a;
-    background-color: #ffd451;
-    border-color: #ffd451;
-}
-
-.btn-primary:hover {
-    color: #f4f5f7;
-    background-color: #41bac5;
-    border-color: #41bac5;
-}
-
-.btn-outline-primary {
-    color: #b9d6cf;
-    border-color: #b9d6cf;
-    border-style:solid;
-    
-}
-
-.btn-outline-primary:hover {
-    color: #F4F4F6;
-    background-color: #41bac5;
-    border-color: #41bac5;
-  }
-
-body {
-    background-color: #f8f8f8;
-    font-family: 'Varela Round', sans-serif;
-} */ 
