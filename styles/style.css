@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-
 .material-icons.md-24 {
     font-size: 24px;
     color: #728a86;
@@ -21,12 +20,16 @@
     padding: 0;
 }
 
+iframe {
+    width: 100%;
+    height: 100vh;
+}
+
 #wrapper {
     position: relative;
 }
 
 #over_map {
-
     position: absolute;
     top: 10px;
     left: 10px;
@@ -109,7 +112,9 @@
     padding: 50px;
 }
 
+
 /** Changing boostrap css */
+
 .bg-info {
     background-color: #d8f1f3 !important;
 }
@@ -146,7 +151,6 @@
     color: rgb(95, 91, 91);
     border-color: rgb(95, 91, 91);
     border-style: solid;
-
 }
 
 .btn-outline-primary:hover {
@@ -167,16 +171,21 @@ body {
 }
 
 
-
 /* translate button */
+
 #translate {
     color: #f8f8f8;
     background-color: #40bcc6;
-
 }
 
+
 /** review button */
+
 #button-container {
     margin-right: 5%;
+}
 
+body {
+    background-color: #f8f8f8;
+    font-family: 'Varela Round', sans-serif;
 }
