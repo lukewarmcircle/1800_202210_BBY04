@@ -34,7 +34,6 @@ function writeReview() {
 
     console.log(Comment, Recommend, Parking, Cost, Rating, Username);
 
-    console.log(Comment, Recommend, Parking, Cost, Rating);
 
 
     db.collection("Reviews").add({

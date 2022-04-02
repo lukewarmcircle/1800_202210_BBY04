@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var button = document.createElement('input');
     button.type = 'button';
     button.id = 'translate';
-    button.value = 'translate';
+    button.value = 'Translate';
     button.className = 'btn';
 
     button.onclick = function() {
