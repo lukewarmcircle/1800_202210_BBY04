@@ -1,3 +1,4 @@
+// reads restaurant description info from db
 function read_description() {
 
 
@@ -69,7 +70,7 @@ read_description();
 
 
 
-
+// interactive image gallery
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -155,7 +156,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }, false);
 
 
-
+// sets local storage to be used by populateName() in review.js
 function toReview() {
 
     let name = document.getElementById("pageName").innerHTML;
@@ -172,7 +173,7 @@ function populateReviewsDynamically() {
 
 
     db.collection("Reviews")
-        .limit(10)
+        .limit(20)
         .get()
         .then(allReviews => {
             allReviews.forEach(doc => {

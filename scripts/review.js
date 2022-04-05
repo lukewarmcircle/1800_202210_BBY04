@@ -22,6 +22,7 @@ db.collection("Restaurants").where("name", "==", restaurantName)
     });
 
 
+// writes reviews into db based on user text inputs
 function writeReview() {
     console.log("Review has been written to the database")
     let Title = document.getElementById("title").value;
@@ -62,6 +63,7 @@ $(':radio').change(function() {
 });
 
 
+// auto-populates name of restaurant to reduce user input error
 function populateName() {
     var name2 = localStorage.getItem("val");
     document.getElementById("title").value = name2;
@@ -70,8 +72,3 @@ function populateName() {
 populateName();
 
 document.getElementById("title").style.width = "300px";
-
-
-$(':radio').change(function() {
-    console.log('New star rating: ' + this.value);
-});
