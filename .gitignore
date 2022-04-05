@@ -1,4 +1,10 @@
 .DS_Store
 *.logs
 node_modules/
+.firebase/
+.firebaserc
+404.html
+firebase.json
+firestore.indexes.json
+firestore.rules
 firebaseAPI_BBY04.js
