@@ -189,3 +189,8 @@ body {
     background-color: #f8f8f8;
     font-family: 'Varela Round', sans-serif;
 }
+
+#back {
+    justify-content: center;
+    right: 100px;
+}
