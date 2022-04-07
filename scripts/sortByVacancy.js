@@ -1,3 +1,5 @@
+// Sorts restaurants by vacancyfrom low to high (low represents lots of seating) and populates sort by vacancy.html accordingly
+
 function sortByVacancy() {
 
     let restaurantCardTemplate = document.getElementById("restaurantCardTemplate");

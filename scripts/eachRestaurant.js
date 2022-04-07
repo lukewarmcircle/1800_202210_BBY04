@@ -1,4 +1,4 @@
-// reads restaurant description info from db
+// reads restaurant description info from db into respective restaurant info page
 function read_description() {
 
 
@@ -70,7 +70,7 @@ read_description();
 
 
 
-// interactive image gallery
+// interactive image gallery in mobile view
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -689,7 +689,7 @@ function getVacancy() {
 getVacancy();
 
 
-
+// Reads distance values from db into respective restaurant info pages
 
 function getDistance() {
 

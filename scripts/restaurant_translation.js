@@ -1,3 +1,5 @@
+// Writes text translated in Chinese to the db
+
 function writeTranslation() {
     //define a variable for the collection you want to create in Firestore to populate data
     var translationRef = db.collection("Restaurants_translation");
@@ -13,7 +15,7 @@ function writeTranslation() {
 
         name: "Atlas Steak + Fish",
         translation: "Atlas Steak + Fish是個現代感與風情碰撞的指標性北美式牛排館。請盡情啜飲我們隨興的優雅，在氛圍中享用時興的服務與卓越的餐點。"
-        
+
 
     });
 

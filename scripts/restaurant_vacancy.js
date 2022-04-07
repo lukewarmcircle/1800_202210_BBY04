@@ -1,3 +1,5 @@
+// Commented out after initial write into db
+
 // function writeVacancy() {
 //     //define a variable for the collection you want to create in Firestore to populate data
 //     var vacaRef = db.collection("Restaurant_vacancy");
@@ -90,4 +92,3 @@
 // }
 
 // writeVacancy();
-

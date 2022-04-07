@@ -1,3 +1,5 @@
+// Sorts restaurants by cost from low to high and populates sort by cost.html accordingly
+
 function sortByCost() {
 
     let restaurantCardTemplate = document.getElementById("restaurantCardTemplate");

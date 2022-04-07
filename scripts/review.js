@@ -3,9 +3,9 @@ let restaurantName = localStorage.getItem("restaurantName");
 db.collection("Restaurants").where("name", "==", restaurantName)
     .get()
     .then(queryName => {
-        //see how many results you have got from the query
+
         size = queryName.size;
-        // get the documents of query
+
         Names = queryName.docs;
 
 
@@ -57,7 +57,7 @@ function writeReview() {
 }
 
 
-
+// Clickable rating stars on the review page
 $(':radio').change(function() {
     console.log('New star rating: ' + this.value);
 });

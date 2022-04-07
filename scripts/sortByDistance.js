@@ -1,3 +1,5 @@
+// Sorts restaurants by distance from low to high and populates sort by distance.html accordingly
+
 function sortByDistance() {
 
     let restaurantCardTemplate = document.getElementById("restaurantCardTemplate");

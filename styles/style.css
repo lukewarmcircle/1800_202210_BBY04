@@ -1,196 +1,203 @@
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-.material-icons.md-24 {
-    font-size: 24px;
-    color: #728a86;
-}
-
-.material-icons.md-24:hover {
-    font-size: 24px;
-    color: #40bcc6;
-}
-
-#review-welcome {
-    font-size: x-large;
-}
-
-#map {
-    overflow-x: hidden;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-iframe {
-    width: 100%;
-    height: 100vh;
-}
-
-#wrapper {
-    position: relative;
-}
-
-#over_map {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    z-index: 99;
-}
-
-.floating-right-bottom-btn {
-    position: absolute;
-    right: 30px;
-    top: 600px;
-}
-
-.rating {
-    display: inline-block;
-    position: relative;
-    height: 50px;
-    line-height: 50px;
-    font-size: 50px;
-}
-
-.rating label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    cursor: pointer;
-}
-
-.rating label:last-child {
-    position: static;
-}
-
-.rating label:nth-child(1) {
-    z-index: 5;
-}
-
-.rating label:nth-child(2) {
-    z-index: 4;
-}
-
-.rating label:nth-child(3) {
-    z-index: 3;
-}
-
-.rating label:nth-child(4) {
-    z-index: 2;
-}
-
-.rating label:nth-child(5) {
-    z-index: 1;
-}
-
-.rating label input {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-}
-
-.rating label .icon {
-    float: left;
-    color: transparent;
-}
-
-.rating label:last-child .icon {
-    color: #000;
-}
-
-.rating:not(:hover) label input:checked~.icon,
-.rating:hover label:hover input~.icon {
-    color: #09f;
-}
-
-.rating label input:focus:not(:checked)~.icon:last-child {
-    color: #000;
-    text-shadow: 0 0 5px #09f;
-}
-
-#thanks {
-    padding: 50px;
-}
-
-
-/** Changing boostrap css */
-
-.bg-info {
-    background-color: #d8f1f3 !important;
-}
-
-.navbar-light .navbar-brand {
-    color: #101d2a;
-}
-
-.btn-info {
-    color: #101d2a;
-    background-color: #ffd451;
-    border-color: #ffd451;
-}
-
-.btn-info:hover {
-    color: #f4f5f7;
-    background-color: #40bcc6;
-    border-color: #40bcc6;
-}
-
-.btn-primary {
-    color: #101d2a;
-    background-color: #ffd451;
-    border-color: #ffd451;
-}
-
-.btn-primary:hover {
-    color: #f4f5f7;
-    background-color: #40bcc6;
-    border-color: #40bcc6;
-}
-
-.btn-outline-primary {
-    color: rgb(95, 91, 91);
-    border-color: rgb(95, 91, 91);
-    border-style: solid;
-}
-
-.btn-outline-primary:hover {
-    color: #F4F4F6;
-    background-color: #40bcc6;
-    border-color: #40bcc6;
-}
-
-body {
-    background-color: #f8f8f8;
-    background-image: url(../images/background5.png);
-    font-family: 'Varela Round', sans-serif;
-}
-
-.restaurant-block {
-    background-color: rgba(255, 255, 255, 0.85);
-    border-radius: 5%;
-}
-
-
-/* translate button */
-
-#translate {
-    color: #f8f8f8;
-    background-color: #40bcc6;
-}
-
-
-/** review button */
-
-#button-container {
-    margin-right: 5%;
-}
-
-body {
-    background-color: #f8f8f8;
-    font-family: 'Varela Round', sans-serif;
-}
-
-#back {
-    justify-content: center;
-    right: 100px;
-}
+    @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+    .material-icons.md-24 {
+        font-size: 24px;
+        color: #728a86;
+    }
+    
+    .material-icons.md-24:hover {
+        font-size: 24px;
+        color: #40bcc6;
+    }
+    
+    #review-welcome {
+        font-size: x-large;
+    }
+    
+    #map {
+        overflow-x: hidden;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    iframe {
+        width: 100%;
+        height: 100vh;
+    }
+    
+    #wrapper {
+        position: relative;
+    }
+    
+    #over_map {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 99;
+    }
+    
+    .floating-right-bottom-btn {
+        position: absolute;
+        right: 30px;
+        top: 600px;
+    }
+    
+    .rating {
+        display: inline-block;
+        position: relative;
+        height: 50px;
+        line-height: 50px;
+        font-size: 50px;
+    }
+    
+    .rating label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        cursor: pointer;
+    }
+    
+    .rating label:last-child {
+        position: static;
+    }
+    
+    .rating label:nth-child(1) {
+        z-index: 5;
+    }
+    
+    .rating label:nth-child(2) {
+        z-index: 4;
+    }
+    
+    .rating label:nth-child(3) {
+        z-index: 3;
+    }
+    
+    .rating label:nth-child(4) {
+        z-index: 2;
+    }
+    
+    .rating label:nth-child(5) {
+        z-index: 1;
+    }
+    
+    .rating label input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+    }
+    
+    .rating label .icon {
+        float: left;
+        color: transparent;
+    }
+    
+    .rating label:last-child .icon {
+        color: #000;
+    }
+    
+    .rating:not(:hover) label input:checked~.icon,
+    .rating:hover label:hover input~.icon {
+        color: #09f;
+    }
+    
+    .rating label input:focus:not(:checked)~.icon:last-child {
+        color: #000;
+        text-shadow: 0 0 5px #09f;
+    }
+    
+    #thanks {
+        padding: 50px;
+    }
+    /** Changing boostrap css */
+    
+    .bg-info {
+        background-color: #d8f1f3 !important;
+    }
+    
+    .navbar-light .navbar-brand {
+        color: #101d2a;
+    }
+    
+    .btn-info {
+        color: #101d2a;
+        background-color: #ffd451;
+        border-color: #ffd451;
+    }
+    
+    .btn-info:hover {
+        color: #f4f5f7;
+        background-color: #40bcc6;
+        border-color: #40bcc6;
+    }
+    
+    .btn-primary {
+        color: #101d2a;
+        background-color: #ffd451;
+        border-color: #ffd451;
+    }
+    
+    .btn-primary:hover {
+        color: #f4f5f7;
+        background-color: #40bcc6;
+        border-color: #40bcc6;
+    }
+    
+    .btn-outline-primary {
+        color: rgb(95, 91, 91);
+        border-color: rgb(95, 91, 91);
+        border-style: solid;
+    }
+    
+    .btn-outline-primary:hover {
+        color: #F4F4F6;
+        background-color: #40bcc6;
+        border-color: #40bcc6;
+    }
+    
+    body {
+        background-color: #f8f8f8;
+        background-image: url(../images/background5.png);
+        font-family: 'Varela Round', sans-serif;
+    }
+    
+    .restaurant-block {
+        background-color: rgba(255, 255, 255, 0.85);
+        border-radius: 5%;
+    }
+    /* translate button */
+    
+    #translate {
+        color: #f8f8f8;
+        background-color: #40bcc6;
+    }
+    /** review button */
+    
+    #button-container {
+        margin-right: 5%;
+    }
+    
+    body {
+        background-color: #f8f8f8;
+        font-family: 'Varela Round', sans-serif;
+    }
+    
+    #back {
+        position: fixed;
+        width: 20%;
+        max-width: 100px;
+        left: 7%;
+        top: 40%;
+    }
+    
+    #map-container {
+        position: relative;
+    }
+    
+    #list {
+        position: absolute;
+        right: 4%;
+        top: 75%;
+    }

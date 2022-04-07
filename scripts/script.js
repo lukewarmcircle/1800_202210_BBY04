@@ -11,14 +11,7 @@ function LoginBtn() {
             insertName();
             const element = document.getElementById('btn-login');
             element.remove();
-            // db.collection("users").doc(user.uid)
-            //     .get()
-            //     .then(function(doc) {
-            //         var n = doc.data().name;
-            //         console.log(n);
-            //         //$("#username").text(n);
-            //         document.getElementById("username").innerText = n;
-            //     })
+
         } else {
             // No user is signed in.
             console.log("not signed in");
@@ -42,14 +35,14 @@ function insertName() {
             currentUser.get().then(userDoc => {
                 var user_Name = userDoc.data().name;
                 console.log(user_Name);
-                //method #1:  insert with html only
-                document.getElementById("insert-name").innerHTML = userDoc.data().name; //using javascript
+
+                document.getElementById("insert-name").innerHTML = userDoc.data().name;
                 console.log("it worked");
-                //method #2:  insert using jquery
-                //$("#insert-name").text(user_Name); //using jquery
+
             })
         } else {
-            // No user is signed in.
+
+            console.log("no user is signed in");
         }
     });
 }
