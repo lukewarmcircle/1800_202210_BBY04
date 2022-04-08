@@ -29,19 +29,23 @@
 
 <body>
 
+    <!--Skeleton.js will populate this with a nav bar-->
     <nav id="navbarPlaceholder"></nav>
 
     <div class="container restaurant-block">
 
+        <!--JS functions will write restaurant name and distance from user-->
         <h1><span id="restaurantName"></span></h1>
         <h3><span id="distance"></span> km</h3>
 
+        <!--Desktop view image gallery. Disappears in mobile view-->
         <div id="gallery">
             <img class="restaurant-image1" src="/images/atlas.jpg">
             <img class="restaurant-image2" src="/images/atlas2.jpg">
             <img class="restaurant-image3" src="/images/atlas3.jpg">
         </div>
 
+        <!--Interactive image gallery that is only visible in a mobile view-->
         <div id="mobile-gallery">
 
 
@@ -70,7 +74,7 @@
 
 
 
-
+        <!--JS functions will write restaurant infomation from the db-->
         <div id="location">
             <p><span id="street-num"></span> <span id="city"></span>, <span id="postal-code"></span></p>
         </div>
@@ -97,6 +101,7 @@
 
         <p>Name of reviewer: <span id="username"></span> </p>
 
+        <!--Review stars. JS functions will hide stars depending on db rating-->
         <div id="ratings-container">
             <i class="material-icons" id="1">star</i>
             <i class="material-icons" id="2">star</i>
@@ -105,7 +110,7 @@
             <i class="material-icons" id="5">star</i>
         </div>
 
-
+        <!--JS functions will write review details into these containers-->
         <div id="cost-container">
             <p>Price: <span id="cost"></span> </p>
         </div>
@@ -131,6 +136,8 @@
     <br>
     <br>
 
+
+    <!--Skeleton.js will populate this with a footer-->
     <footer id="footerPlaceholder"></footer>
 
     <script src="./scripts/skeleton.js"></script>
