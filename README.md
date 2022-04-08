@@ -1,13 +1,14 @@
-## My Web Application (Add your Title here)
+## My Web Application (TableSeeker)
 
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Contents](#content)
 
 ## General Info
-This browser based web application to ...
+This is a browser based web application that allows diners to search for restaurants with vacant seating sorted by distance a cost.
 * Hi my name is Caroline.
 *I'm still a bit confused on this lab project but I'm slowly getting the hang of it.
+* My name is Stanley. We have come a long way in 4 months. I am proud of the progress we have made.
 	
 ## Technologies
 Technologies used for this project:

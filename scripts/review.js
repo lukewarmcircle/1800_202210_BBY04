@@ -1,5 +1,8 @@
 let restaurantName = localStorage.getItem("restaurantName");
 
+/**
+ * Reads restaurant name from db into restaurantName span in review.html
+ */
 db.collection("Restaurants").where("name", "==", restaurantName)
     .get()
     .then(queryName => {
@@ -22,9 +25,13 @@ db.collection("Restaurants").where("name", "==", restaurantName)
     });
 
 
-// writes reviews into db based on user text inputs
+/**
+ * Writes user reviews from review.html into db.
+ */
 function writeReview() {
     console.log("Review has been written to the database")
+
+    // Selects user inputs from reviw form and stores them into variables
     let Title = document.getElementById("title").value;
     let Comment = document.getElementById("comment").value;
     let Recommend = document.querySelector('input[name="recommend"]:checked').value;
@@ -36,34 +43,36 @@ function writeReview() {
     console.log(Comment, Recommend, Parking, Cost, Rating, Username);
 
 
-
+    // Writes user input variables from review form into db
     db.collection("Reviews").add({
 
-            title: Title,
-            comment: Comment,
-            recommend: Recommend,
-            freeParking: FreeParking,
-            cost: Cost,
-            rating: Rating,
-            username: Username,
+        title: Title,
+        comment: Comment,
+        recommend: Recommend,
+        freeParking: FreeParking,
+        cost: Cost,
+        rating: Rating,
+        username: Username,
 
 
-        })
-        .then(function() {
-            window.location.href = "/reviewThanks.html";
-        })
+    })
+
+    // After review inputs are written, redirect to a success page
+    .then(function() {
+        window.location.href = "/reviewThanks.html";
+    })
 
 
 }
 
 
-// Clickable rating stars on the review page
+// Allows for clickable rating stars on the review page
 $(':radio').change(function() {
     console.log('New star rating: ' + this.value);
 });
 
 
-// auto-populates name of restaurant to reduce user input error
+// Auto-populates name of restaurant to reduce user input error
 function populateName() {
     var name2 = localStorage.getItem("val");
     document.getElementById("title").value = name2;
@@ -71,4 +80,5 @@ function populateName() {
 
 populateName();
 
+// Changes sizing of the disabled input text box for restaurant name
 document.getElementById("title").style.width = "300px";

@@ -2,20 +2,26 @@ var ui = new firebaseui.auth.AuthUI(firebase.auth());
 
 var uiConfig = {
     callbacks: {
-        signInSuccessWithAuthResult: function (authResult, redirectUrl) {
+        signInSuccessWithAuthResult: function(authResult, redirectUrl) {
             // User successfully signed in.
             // Return type determines whether we continue the redirect automatically
             // or whether we leave that to developer to handle.
-            var user = authResult.user;                            // get the user object from the Firebase authentication database
-            if (authResult.additionalUserInfo.isNewUser) {         //if new user
-                db.collection("users").doc(user.uid).set({         //write to firestore. We are using the UID for the ID in users collection
-                    name: user.displayName,                    //"users" collection
-                    email: user.email                          //with authenticated user's ID (user.uid)
-                }).then(function () {
-                    console.log("New user added to firestore");
-                    window.location.assign("login-success.html");       //re-direct to main.html after signup
-                })
-                    .catch(function (error) {
+            // get the user object from the Firebase authentication database
+            var user = authResult.user;
+
+            /* If it is a new user, add a new entry to users colleciton in db containing name, UID, and email info
+             */
+            if (authResult.additionalUserInfo.isNewUser) {
+                db.collection("users").doc(user.uid).set({
+                        name: user.displayName,
+                        email: user.email
+                    }).then(function() {
+                        console.log("New user added to firestore");
+
+                        // Re-directs to login-success.html after signup
+                        window.location.assign("login-success.html");
+                    })
+                    .catch(function(error) {
                         console.log("Error adding new user: " + error);
                     });
             } else {
@@ -23,7 +29,7 @@ var uiConfig = {
             }
             return false;
         },
-        uiShown: function () {
+        uiShown: function() {
             // The widget is rendered.
             // Hide the loader.
             document.getElementById('loader').style.display = 'none';
@@ -48,24 +54,3 @@ var uiConfig = {
 };
 
 ui.start('#firebaseui-auth-container', uiConfig);
-
-// function Signout() {
-//     firebase.auth().signOut()
-
-//         .then(function () {
-//             console.log('Signout Succesfull')
-//         }, function (error) {
-//             console.log('Signout Failed')
-//         });
-// }
-
-// import { getAuth, signOut } from "firebase/auth";
-
-// const auth = getAuth();
-// signOut(auth).then(() => {
-//     // Sign-out successful.
-// }).catch((error) => {
-//     // An error happened.
-// });
-
-// document.getElementsByClassName("btn-logout").addEventListener("click", signout());

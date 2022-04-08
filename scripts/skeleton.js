@@ -6,9 +6,10 @@ function loadSkeleton() {
     console.log($('#navbarPlaceholder').load('./text/nav.html'));
     console.log($('#footerPlaceholder').load('./text/footer.html'));
 }
-loadSkeleton(); //invoke the function
+//invoke the function
+loadSkeleton();
 
 /* tooltip (Chinese hoverover bar in nav.html) */
-$(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();   
-  });
+$(document).ready(function() {
+    $('[data-toggle="tooltip"]').tooltip();
+});

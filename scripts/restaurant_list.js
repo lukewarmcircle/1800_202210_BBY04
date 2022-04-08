@@ -1,4 +1,4 @@
-// Commented out after initial write into db
+// Commented out after initial write of restaurant info into db
 
 // function writeRestaurants() {
 //     //define a variable for the collection you want to create in Firestore to populate data
